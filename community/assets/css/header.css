@@ -1,0 +1,15 @@
+.header {
+  text-align: center;
+  background: white;
+  padding: 15px 0;
+  font-size: 20px;
+  font-weight: bold;
+  width: 100%;
+}
+
+.header hr {
+  border: 0;
+  height: 1px;
+  background: black;
+  margin-top: 10px;
+}
