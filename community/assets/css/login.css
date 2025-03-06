@@ -3,10 +3,11 @@
   padding: 20px;
   border-radius: 8px;
   text-align: center;
-  width: 300px;
+  width: 350px;
 }
 .input-group {
-  margin-bottom: 15px;
+  position: relative;
+  margin-bottom: 40px;
   text-align: left;
   width: 100%;
 }
@@ -22,6 +23,10 @@ input {
   display: block;
 }
 .helper-text {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 4px;
   color: red;
   font-size: 12px;
   display: none;
@@ -43,6 +48,6 @@ input {
 .signup-link {
   margin-top: 10px;
   font-size: 14px;
-  color: blue;
+  color: black;
   cursor: pointer;
 }

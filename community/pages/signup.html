@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>회원가입</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="../assets/css/common.css" />
+    <link rel="stylesheet" href="../assets/css/header.css" />
+    <link rel="stylesheet" href="../assets/css/signup.css" />
+  </head>
+  <body>
+    <script src="../assets/js/header.js"></script>
+    <div class="container">
+      <h2>회원가입</h2>
+      <div class="signup-container">
+        <!-- 프로필 사진 업로드 -->
+        <div class="profile-upload">
+          <div class="profile-title">
+            <label> 프로필 사진 </label>
+            <div class="helper-text" id="profile-helper" style="display: block">
+              * 프로필 사진을 추가해주세요.
+            </div>
+          </div>
+          <label for="profilePic" class="profile-circle">
+            <img
+              id="profilePreview"
+              src=""
+              alt="프로필 사진"
+              style="display: none"
+            />
+            <i class="material-icons profile-icon">add</i>
+          </label>
+          <input type="file" id="profilePic" accept="image/*" hidden />
+        </div>
+
+        <!-- 회원가입 폼 -->
+        <form id="signup-form">
+          <div class="input-group">
+            <label for="email">이메일*</label>
+            <input type="text" id="email" placeholder="이메일을 입력하세요" />
+            <div class="helper-text" id="email-helper">
+              * 올바른 이메일 주소 형식을 입력해주세요. (예:
+              example@example.com)
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label for="password">비밀번호*</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="비밀번호를 입력하세요"
+            />
+            <div class="helper-text" id="password-helper">
+              * 비밀번호를 입력해주세요
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label for="confirm-password">비밀번호 확인*</label>
+            <input
+              type="password"
+              id="confirm-password"
+              placeholder="비밀번호를 한 번 더 입력하세요"
+            />
+            <div class="helper-text" id="confirm-password-helper"></div>
+          </div>
+
+          <div class="input-group">
+            <label for="nickname">닉네임*</label>
+            <input
+              type="text"
+              id="nickname"
+              placeholder="닉네임을 입력하세요"
+            />
+            <div class="helper-text" id="nickname-helper"></div>
+          </div>
+
+          <button type="submit" id="signup-btn">회원가입</button>
+        </form>
+
+        <div class="login-link" onclick="navigateTo('login.html')">
+          로그인하러 가기
+        </div>
+      </div>
+    </div>
+
+    <script src="../assets/js/router.js"></script>
+    <script type="module" src="../assets/js/signup.js"></script>
+  </body>
+</html>
