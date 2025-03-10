@@ -20,9 +20,12 @@ function setupHeader() {
   } else if (currentPage === "signup.html") {
     backButton.style.display = "block"; // 회원가입 페이지 → 뒤로가기 표시
     headerProfile.style.display = "none"; // 회원가입 페이지 → 프로필 숨김
+  } else if (currentPage === "posts.html") {
+    backButton.style.display = "none"; // 뒤로가기 숨김
+    headerProfile.style.display = "block"; // 프로필 표시
   } else {
-    backButton.style.display = "block"; // 다른 페이지 → 뒤로가기 표시
-    headerProfile.style.display = "block"; // 다른 페이지 → 프로필 표시
+    backButton.style.display = "block"; // 뒤로가기 표시
+    headerProfile.style.display = "block"; // 프로필 표시
   }
 
   // 뒤로가기 버튼 기능
