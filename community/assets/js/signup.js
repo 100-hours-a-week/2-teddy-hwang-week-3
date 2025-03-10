@@ -1,7 +1,7 @@
 import { hideHelperText, showHelperText } from "./common.js";
 import { validateEmail, validatePassword } from "./validation.js";
 
-const signupForm = document.getElementById("signup-form");
+const signupForm = document.getElementById("signupForm");
 const emailInput = document.getElementById("email");
 const passwordInput = document.getElementById("password");
 const confirmPasswordInput = document.getElementById("confirm-password");
