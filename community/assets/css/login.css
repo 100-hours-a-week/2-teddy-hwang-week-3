@@ -1,19 +1,27 @@
 .login-container {
-  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #f4f5f7;
   padding: 20px;
   border-radius: 8px;
   text-align: center;
-  width: 350px;
+  width: 400px;
+  height: calc(100vh - 157px);
 }
+
 .input-group {
   position: relative;
   margin-bottom: 40px;
   text-align: left;
   width: 100%;
 }
+
 label {
   font-weight: bold;
 }
+
 input {
   width: calc(100% - 20px);
   padding: 10px;
@@ -22,6 +30,7 @@ input {
   border-radius: 4px;
   display: block;
 }
+
 .helper-text {
   position: absolute;
   top: 100%;
@@ -31,6 +40,7 @@ input {
   font-size: 12px;
   display: none;
 }
+
 .login-btn {
   width: 100%;
   padding: 10px;
@@ -41,10 +51,12 @@ input {
   cursor: not-allowed;
   display: block;
 }
+
 .login-btn.active {
   background-color: #7f6aee;
   cursor: pointer;
 }
+
 .signup-link {
   margin-top: 10px;
   font-size: 14px;
