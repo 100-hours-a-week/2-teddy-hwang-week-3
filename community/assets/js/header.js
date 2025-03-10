@@ -17,7 +17,7 @@ function setupHeader() {
   if (currentPage === "login.html") {
     backButton.style.display = "none"; // 로그인 페이지 → 뒤로가기 숨김
     headerProfile.style.display = "none"; // 로그인 페이지 → 프로필 숨김
-  } else if (currentPage === "signup.html") {
+  } else if (currentPage === "signin.html") {
     backButton.style.display = "block"; // 회원가입 페이지 → 뒤로가기 표시
     headerProfile.style.display = "none"; // 회원가입 페이지 → 프로필 숨김
   } else if (currentPage === "posts.html") {
@@ -27,7 +27,7 @@ function setupHeader() {
     backButton.style.display = "block"; // 뒤로가기 표시
     headerProfile.style.display = "block"; // 프로필 표시
   }
-
+  console.log(currentPage);
   // 뒤로가기 버튼 기능
   backButton.addEventListener("click", function () {
     window.history.back();
