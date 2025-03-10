@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="../assets/css/common.css" />
+    <link rel="stylesheet" href="../assets/css/header.css" />
+    <link rel="stylesheet" href="../assets/css/post.css" />
+  </head>
+  <body>
+    <script src="../assets/js/header.js"></script>
+    <div class="container">
+      <!-- 게시글 정보 -->
+      <div class="post-header">
+        <h1 id="postTitle" class="post-title"></h1>
+        <div class="post-meta">
+          <div class="post-info">
+            <img id="postAuthorImg" src="" alt="프로필 이미지" />
+            <span id="postAuthor" class="post-author"></span>
+            <span id="postDate" class="post-date"></span>
+          </div>
+          <div class="post-actions">
+            <button id="editPost">수정</button>
+            <button id="deletePost">삭제</button>
+          </div>
+        </div>
+      </div>
+      <hr />
+
+      <!-- 게시글 내용 -->
+      <div class="post-content">
+        <img id="postImage" src="" alt="게시글 이미지" class="post-image" />
+        <p id="postText" class="post-text"></p>
+
+        <div class="post-stats">
+          <button id="likeButton" class="like-button statistics">
+            0 좋아요수
+          </button>
+          <button id="viewCount" class="view-count statistics no-click">
+            0 조회수
+          </button>
+          <button id="commentCount" class="comment-count statistics no-click">
+            0 댓글
+          </button>
+        </div>
+      </div>
+      <hr />
+
+      <!-- 댓글 작성 -->
+      <form id="commentForm" class="comment-section">
+        <input type="text" id="commentInput" placeholder="댓글을 남겨주세요!" />
+        <button id="submitComment" class="disabled">댓글 등록</button>
+      </form>
+
+      <!-- 댓글 목록 -->
+      <div id="commentList" class="comment-list"></div>
+    </div>
+
+    <!-- 삭제 확인 모달 -->
+    <div id="deleteModal" class="modal hidden">
+      <div class="modal-content">
+        <h3>게시글을 삭제하시겠습니까?</h3>
+        <p>삭제한 내용은 복구할 수 없습니다.</p>
+        <button id="cancelDelete">취소</button>
+        <button id="confirmDelete">확인</button>
+      </div>
+    </div>
+
+    <script type="module" src="../assets/js/post.js"></script>
+  </body>
+</html>
