@@ -2,9 +2,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
   justify-content: center;
   margin: 0;
+  background-color: #f4f5f7;
 }
 
 /* 컨텐츠 중앙 정렬 */
@@ -12,8 +12,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   flex-grow: 1; /* 헤더를 제외한 남은 공간을 차지 */
   width: 100%;
-  max-width: 800px; /* 컨텐츠 너비 제한 */
+  max-width: 600px; /* 컨텐츠 너비 제한 */
+  padding-bottom: 40px;
 }
